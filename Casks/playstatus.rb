@@ -1,6 +1,6 @@
 cask "playstatus" do
-  version "3.0.3"
-  sha256 "adeacf0d8468825e48965383c672539213724cd0db44ebed313bcfad51c064bc"
+  version "3.0.4"
+  sha256 "3bdd51c0b5203b306d0b63ab42e5c5fce92febe0553a3f7df16a71b290fda1aa"
 
   url "https://github.com/nbolar/PlayStatus/releases/download/v#{version}/PlayStatus-#{version}.zip"
   name "PlayStatus"
@@ -16,6 +16,8 @@ cask "playstatus" do
   depends_on macos: :sequoia
 
   app "PlayStatus.app"
+
+  uninstall quit: "com.bolar.PlayStatus"
 
   zap trash: [
     "~/Library/Application Support/PlayStatus",
