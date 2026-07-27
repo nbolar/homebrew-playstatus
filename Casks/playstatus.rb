@@ -1,8 +1,8 @@
 cask "playstatus" do
-  version "3.0.6"
-  sha256 "27d7cf3d82ec365d7e8873db9acee897f4b92f59a220f9dac77b1bd1a980d134"
+  version "3.0.6,31"
+  sha256 "7c06fa4c274af31d49ce3d4705106dde9862b8289051c79de484d773bc4cb767"
 
-  url "https://github.com/nbolar/PlayStatus/releases/download/v#{version}/PlayStatus-#{version}.zip"
+  url "https://github.com/nbolar/PlayStatus/releases/download/v#{version.before_comma}/PlayStatus-#{version.before_comma}-build#{version.after_comma}.zip"
   name "PlayStatus"
   desc "Menu bar music controls and now-playing information"
   homepage "https://github.com/nbolar/PlayStatus"
