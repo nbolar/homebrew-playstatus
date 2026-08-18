@@ -1,6 +1,6 @@
 cask "playstatus" do
-  version "3.0.8,33"
-  sha256 "ae1502eb2e00b31d26bf006a939625ca18e2917bd5857e565ebcb5f80f321231"
+  version "3.1.0,34"
+  sha256 "d05bb7e19f1fc75e0b90f281c885ac1162230b9c1833d9d72bcd4ca09b668297"
 
   url "https://github.com/nbolar/PlayStatus/releases/download/v#{version.before_comma}/PlayStatus-#{version.before_comma}-build#{version.after_comma}.zip"
   name "PlayStatus"
